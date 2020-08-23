@@ -26,7 +26,7 @@
     "@nestjs/graphql": "^7.6.0",
     "@nestjs/platform-express": "^7.0.0",
     "@nestjs/typeorm": "^7.1.0",
-    "@solness/auth": "^0.0.12",
+    "@solness/auth": "^0.0.13",
     "@solness/core": "^0.0.7",
     "apollo-server-express": "^2.16.1",
     "dotenv": "^8.2.0",

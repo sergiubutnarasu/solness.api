@@ -30,7 +30,4 @@ export class User extends BaseEntity {
   @Field(() => Int)
   @Column({ type: 'enum', enum: Role, default: Role.User })
   role: Role;
-
-  // TODO: refresh token relation
-  refreshTokens: RefreshToken[];
 }
