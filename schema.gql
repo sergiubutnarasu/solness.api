@@ -2,14 +2,13 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-type Mutation {
-  deleteUser(id: Float!): User!
-  saveUser(model: UserInput!): User!
-}
-
-input PageListInput {
-  page: Float = 1
-  pageSize: Float = 10
+type User {
+  id: Int
+  enabled: Boolean!
+  email: String!
+  firstName: String!
+  lastName: String!
+  role: Int!
 }
 
 type PaginatedUserResponse {
@@ -23,13 +22,14 @@ type Query {
   getUser(id: Float!): User
 }
 
-type User {
-  id: Int
-  enabled: Boolean!
-  email: String!
-  firstName: String!
-  lastName: String!
-  role: Int!
+input PageListInput {
+  page: Float = 1
+  pageSize: Float = 10
+}
+
+type Mutation {
+  deleteUser(id: Float!): User!
+  saveUser(model: UserInput!): User!
 }
 
 input UserInput {
