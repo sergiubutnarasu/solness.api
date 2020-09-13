@@ -1,7 +1,6 @@
 import { Field, InputType, Int, ObjectType } from '@nestjs/graphql';
-import { RefreshToken } from '@solness/auth';
 import { BaseEntity, EncryptTransform } from '@solness/core';
-import { Column, Entity, JoinTable, ManyToMany } from 'typeorm';
+import { Column, Entity } from 'typeorm';
 import { Role } from '../enums';
 
 @Entity()

@@ -12,7 +12,7 @@ import { AppService } from './app.service';
 import * as modules from './modules';
 import { RefreshToken } from '@solness/auth';
 
-const appModules = [modules.AuthModule, modules.UserModule];
+const appModules = [modules.UserModule, modules.AuthModule];
 
 @Module({
   imports: [

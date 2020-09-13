@@ -72,10 +72,7 @@ export class UserService extends BaseService<User> {
     const data = await this.repo.findOne(userId);
 
     return {
-      email: await CryptoHelper.decrypt(
-        AppHelper.getConfig(AppConfigKey.DefaultEncryptionKey),
-        data.email,
-      ),
+      email: data.email,
       id: data.id,
       role: parseInt(data.role),
       data: {
